@@ -1,11 +1,12 @@
 
 //$('.formText').value = "";
-$('#submit').click(function() {
+$('#submit').click(function(e) {
     e.preventDefault();
-    var submitStr = $(this).find('input[type=text], select').val();
-    var submitStrArr = submitStr.split('');
+    var submitStr = $('input[type=text], select').val();
+    console.log(submitStr);
     if (submitStr.length === 6)
     {
+      var submitStrArr = submitStr.split('');
       var C = submitStrArr[0].toLowerCase();
       var S = submitStrArr[1].toLowerCase();
       var X = submitStrArr[2];

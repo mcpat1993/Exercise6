@@ -6,18 +6,19 @@
 </head>
 <body>
 	<script type="text/javascript">
-      function submit()
-      {
-        console.log("SUBMIT");
-      }
+      //function submit()
+      //{
+       // console.log("SUBMIT");
+      //}
     </script>
-	<form class='classForm' onSubmit='submit()'>
-  		<h1>Hello, please enter the course you are looking for!</h1>
-  		<input type="text" class="formText" name="courseform" placeholder="Enter Course ID">
+	<form class='classForm'>
+  	<h1>Hello, please enter the course you are looking for!</h1>
+  	<input type="text" class="formText" name="courseform" placeholder="Enter Course ID">
 		<input id="submit" class='submit' type="submit">
  	</form>
  	<div class='accepted'>
  		Accepted courses: 
+    <?php echo $_POST["courseform"]; ?>
  	</div>
  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
  	<script src="exercise6.js"></script>
